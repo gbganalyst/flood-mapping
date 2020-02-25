@@ -115,7 +115,7 @@
     </nav>
 
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-md-3">
         <div class="card" style="">
           <img src="images/agric.jpg" class="card-img-top" alt="">
           <div class="card-body text-center">
@@ -135,15 +135,15 @@
 
 
             <div style='padding: 10px;' class="btn-group" role="group" aria-label="Basic example">
-              <a href="/oyo-farms"><button type="button" class="btn btn-lg btn-primary">Previous</button></a>
+              <a href="/flood-mapping"><button type="button" class="btn-sm btn btn-primary">Previous</button></a>
               <button type="button" class="btn btn-lg"></button>
-              <a href="/flood-area"><button type="button" class="btn btn-lg btn-primary">Next</button></a>
+              <a href="/summary"><button type="button" class="btn-sm btn btn-primary">Next</button></a>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col-md-10">
+      <div class="col-md-9">
         <div id="app">
           <!-- Kepler.gl map will be placed here-->
         </div>
@@ -248,7 +248,7 @@
                 react.createElement(keplerGl.KeplerGl, {
                   mapboxApiAccessToken: mapboxToken,
                   id: "map",
-                  width: 1250,
+                  width: 1100,
                   height: windowDimension.height
                 })
               )

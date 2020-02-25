@@ -35,4 +35,10 @@ app.get('/ibadan-overview', (req, res) => {
     res.render('ibadan-overview')
 })
 
+app.get('/flood-mapping', (req, res) => {
+    res.render('flood-mapping')
+})
+
+
+
 exports.app = functions.https.onRequest(app);
