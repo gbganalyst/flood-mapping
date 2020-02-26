@@ -27,6 +27,10 @@ app.get('/oyo-farms', (req, res) => {
     res.render('oyo-farms')
 })
 
+app.get('/team', (req, res) => {
+    res.render('team')
+})
+
 app.get('/flood-area', (req, res) => {
     res.render('flood-area')
 })
