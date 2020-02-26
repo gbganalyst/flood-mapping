@@ -87,7 +87,16 @@
 
     <div id="map"></div>
     <div id="features">
-        <section id="oyo" class="active">
+        <section id="nigeria" class="active">
+            <h3> Nigeria is home to 206.14 million people</h3>
+            <p>
+                A General Household Survey of the World Bank shows that the agriculture sector is the largest employer
+                of labour and income-generating activity in Nigeria. While this commendable, climate change (change in
+                temp, increasing rainfall leading to flooding e.t.c) in the next coming years is seen as great threat to
+                the industry if there are no interventions by relevant interventions are not taken into consideration
+            </p>
+        </section>
+        <section id="oyo">
             <h3>Oyo State of Nigeria</h3>
             <p>
                 Oyo is an inland state in south-western Nigeria, mainly inhabited by the Yoruba ethnic group. The state
@@ -96,6 +105,8 @@
                 leatherworking e.t.c
 
             </p>
+
+
         </section>
         <section id="ibadan">
             <h3>The great city of Ibadan</h3>
@@ -120,17 +131,7 @@
                 <button type="button" class="btn btn-lg"></button>
                 <a href="/oyo-farms"><button type="button" class="btn btn-lg btn-primary">Next</button></a>
             </div>
-        </section>
-        <section id="london-bridge">
-            {{!-- <h3>London Bridge</h3>
-            <p>
-                Holmes and Watson's investigations take them across London. Sherlock
-                deduces that West was murdered elsewhere, then moved to ibadan
-                Station to create the illusion that he was crushed on the tracks by
-                a train. On their way to Woolwich Sherlock dispatches a telegram to
-                Mycroft at London Bridge: "Send list of all foreign spies known to
-                be in England, with full address."
-            </p> --}}
+
         </section>
         <section id="woolwich">
             {{!-- <h3>Woolwich Arsenal</h3>
@@ -203,24 +204,24 @@
         });
 
         var chapters = {
-            'oyo': {
+            'nigeria': {
                 bearing: 0,
                 center: [4.1772637, 9.006789],
                 zoom: 5,
                 pitch: 0
             },
-            'ibadan': {
+            'oyo': {
                 duration: 6000,
-                center: [3.7640919, 7.4207929],
-                bearing: 0,
-                zoom: 9,
+                center: [2.5016184, 8.132669],
+                bearing: 5,
+                zoom: 6.5,
                 pitch: 0
             },
-            'ibadan2': {
-                duration: 6000,
-                center: [8.1574, 3.6147],
-                bearing: 150,
-                zoom: 5,
+            'ibadan': {
+                duration: 7000,
+                center: [3.7640936, 7.4207929],
+                bearing: 0,
+                zoom: 9,
                 pitch: 0
             }
         };
@@ -237,7 +238,7 @@
             }
         };
 
-        var activeChapterName = 'oyo';
+        var activeChapterName = 'nigeria';
         function setActiveChapter(chapterName) {
             if (chapterName === activeChapterName) return;
 

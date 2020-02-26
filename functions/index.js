@@ -39,6 +39,9 @@ app.get('/flood-mapping', (req, res) => {
     res.render('flood-mapping')
 })
 
+app.get('/summary', (req, res) => {
+    res.render('summary')
+})
 
 
 exports.app = functions.https.onRequest(app);
